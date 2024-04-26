@@ -13,14 +13,17 @@ function StockListTotals(props) {
   const profitClass = totals.profit < 0 ? 'loss' : 'profit';
 
   return (
-    <tr>
-      <th>TOTALS</th>
-      <th colSpan="3">&nbsp;</th>
-      <th className="money">{utilities.formatNumber(totals.purchaseValue)}</th>
-      <th>&nbsp;</th>
-      <th className="money">{utilities.formatNumber(totals.currentValue)}</th>
-      <th className={"money "+profitClass}>{utilities.formatNumber(totals.profit)}</th>
-    </tr>
+    <>
+      <tr>
+        <th>TOTALS</th>
+        <th colSpan="3">&nbsp;</th>
+        <th className="money">{utilities.formatNumber(totals.purchaseValue)}</th>
+        <th>&nbsp;</th>
+        <th className="money">{utilities.formatNumber(totals.currentValue)}</th>
+        <th className={"money "+profitClass}>{utilities.formatNumber(totals.profit)}</th>
+        <td></td>
+      </tr>
+    </>
   );
 }
 

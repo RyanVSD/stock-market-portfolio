@@ -1,5 +1,15 @@
 .App {
   text-align: center;
+  width: 100%;
+}
+
+.container {
+  margin: 0px;
+  padding: 0px;
+}
+
+.card {
+  width: fit-content !important;
 }
 
 .card-header-color {
@@ -11,11 +21,27 @@
 }
 
 .profit {
-  color: darkgreen;
+  color: darkgreen !important;
+}
+
+svg {
+  font-size: 1.2rem; 
+  cursor: pointer;
+  transform: translateX(0px);
+}
+
+svg:hover {
+  transform: translateX(-5px);
+  opacity: 0.5;
+  transition: 0.2s;
 }
 
 .loss {
-  color: red;
+  color: red !important;
+}
+
+.add-stock-error {
+  color: red !important;
 }
 
 .summary {

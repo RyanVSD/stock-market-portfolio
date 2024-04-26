@@ -7,7 +7,7 @@ import { Container } from 'reactstrap';
 
 ReactDOM.render(
   <React.StrictMode>
-    <Container>
+    <Container fluid className="p-0">
       <App />
     </Container>
   </React.StrictMode>,
